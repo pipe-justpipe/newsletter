@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.P{
+    color:hsl(234, 29%, 20%); 
+}
+
+.greyy{
+   color: hsl(234, 29%, 20%);
+}
+.Charcoal-Grey{
+   color: hsl(235, 18%, 26%);
+}
+
+.Grey{
+ color:   hsl(231, 7%, 60%);
+}
+.White{
+    color: hsl(0, 0%, 100%);
+}
