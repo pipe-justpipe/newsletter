@@ -6,49 +6,56 @@
     <title>Pipe's Newsletter</title>
     <link rel="stylesheet" href="dist/output.css"/>
 </head>
-<body class="bg-darkgrey P">
+<body class="bg-white sm:bg-darkgrey P">
     <!-- Sign-up form start -->
-    <div class=" bg-whitee rounded-3xl  flex gap-4 p-4 pr-2  w-2/4 ml-auto mr-auto mt-16 ">
-      <div class="w-2/4 p-11 pt-16" >
-            <h1 class="text-5xl font-bold">Stay updated!</h1>
-            <p class="pt-6 pb-6">Join 60,000+ product managers receiving monthly updates on:</p>
-            <div class="flex flex-row gap-4 mb-4">
-                <img src="dist/icon-list.svg" alt="icon for list"/>
-               <p>Product discovery and building what matters</p>
-            </div>
-            <div class="flex flex-row gap-4 mb-4">
-                <img src="dist/icon-list.svg" alt="icon for list"/>
-                <p>Measuring to ensure updates are a success</p>
-            </div>
-            <div class="flex flex-row gap-4">
-                <img src="dist/icon-list.svg" alt="icon for list"/>
-                <p>And much more!</p>
-            </div>
-            <p class="pt-10">Email address</p>
-            <input class="rounded-lg w-full p-3 border border-solid border-myGrey" type="email"  placeholder="email@company.com"/>
-            <button type="button" class="bg-darkgrey text-whitee p-3 w-full rounded-lg mt-5">Subscribe to monthly newsletter</button>
+  <div class="flex justify-center items-center h-screen">
+    <div class=" bg-whitee sm:rounded-3xl flex flex-col sm:flex-row gap-4 p-0 sm:p-4 h-screen sm:h-auto w-full sm:w-auto">
+      <div class="w-full sm:w-2/4 md:w-auto p-11 pt-16 order-last sm:order-first" >
+        <h1 class="text-5xl font-bold mt-6">Stay updated!</h1>
+        <p class="pt-6 pb-6">Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="flex flex-row gap-4 mb-5">
+            <img src="dist/icon-list.svg" alt="icon for list"/>
+            <p>Product discovery and building what matters</p>
+        </div>
+        <div class="flex flex-row gap-4 mb-5">
+            <img src="dist/icon-list.svg" alt="icon for list"/>
+            <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="flex flex-row gap-4">
+            <img src="dist/icon-list.svg" alt="icon for list"/>
+            <p>And much more!</p>
+        </div>
+        <p class="pt-12">Email address</p>
+        <input class="rounded-lg w-full p-3 border border-solid border-myGrey" type="email"  placeholder="email@company.com"/>
+        <button type="button" class="rounded-lg w-full p-3 bg-darkgrey text-whitee mt-7">Subscribe to monthly newsletter</button>
       </div>
-      <div>
-            <img src="dist/illustration-sign-up-desktop.svg" class="w-full">
+      <div class="w-full sm:w-2/4">
+        <img class="hidden w-full sm:block" src="dist/illustration-sign-up-desktop.svg " alt="illustration-sign-up-desktop"/>
+        <img class="block w-full sm:hidden sm:w-0" src="dist/illustration-sign-up-mobile.svg" alt="illustration for mobile"/>
       </div>
     </div>
+    <!-- Sign-up form end -->
+    <!-- Success message start -->
+    <div class="w-full hide bg-white p-6 h-screen sm:bg-white sm:w-1/5 sm:p-10 sm:rounded-3xl sm:h-80" >
+      <img src="dist/icon-list.svg" alt="icon for list" class="w-16 sm:w-10 pt-20 sm:pt-0"/>
+      <h1 class="text-5xl font-bold pt-10 sm:pt-4">Thanks for subscribing!</h1>
+      <p class="pt-6 pb-96 sm:pt-6 sm:pb-6"> A confirmation email has been sent to <span class="font-bold">ash@loremcompany.com.</span>
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button class="bg-darkgrey text-white w-full py-3 px-6 rounded-lg ">Dismiss message</button>
+    </div>
+  </div>
 
-  <!-- Sign-up form end -->
+  
 
-  <!-- Success message start -->
+  
 
-  Thanks for subscribing!
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
 
   <!-- Success message end -->
-  
+<!--   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#"></a>.
-  </div>
+  </div> -->
 </body>
 </html>

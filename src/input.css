@@ -19,3 +19,10 @@
 .White{
     color: hsl(0, 0%, 100%);
 }
+.block{
+    display: block;
+}
+.hide{
+    display: none;
+}  
+
