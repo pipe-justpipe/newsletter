@@ -538,24 +538,16 @@ video {
   order: 9999;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .block {
@@ -672,6 +664,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pt-16 {
   padding-top: 4rem;
 }
@@ -684,8 +680,8 @@ video {
   padding-top: 1.5rem;
 }
 
-.pt-12 {
-  padding-top: 3rem;
+.font-roboto {
+  font-family: Roboto;
 }
 
 .text-5xl {

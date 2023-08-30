@@ -13,6 +13,9 @@ module.exports = {
         '80':'45%',
         '100':'50%' 
       },
+      fontFamily: {
+        'roboto': 'Roboto'
+      },
     },
   },
   plugins: [],
