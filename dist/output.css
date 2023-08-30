@@ -680,6 +680,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .font-roboto {
   font-family: Roboto;
 }
@@ -736,6 +740,10 @@ video {
     order: -9999;
   }
 
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -750,6 +758,10 @@ video {
 
   .sm\:h-auto {
     height: auto;
+  }
+
+  .sm\:h-full {
+    height: 100%;
   }
 
   .sm\:w-0 {
@@ -812,6 +824,10 @@ video {
 
   .sm\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 4rem;
   }
 }
 
