@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .P{
     color:hsl(234, 29%, 20%); 
 }
@@ -13,6 +14,23 @@
    color: hsl(235, 18%, 26%);
 }
 
+
+.mail.invalid {
+    background-color: #ff625726;
+    color: #ff6257;
+    border: 1px solid #ff6257;
+  }
+  
+  .mail.invalid::-moz-placeholder {
+    color: #ff6257;
+  }
+  
+  .mail.invalid::placeholder {
+    color: #ff6257;
+  }
+
+
+
 .Grey{
  color:   hsl(231, 7%, 60%);
 }
@@ -22,7 +40,7 @@
 .block{
     display: block;
 }
-.hide{
+.active{
     display: none;
 }  
 

@@ -12,7 +12,7 @@
 <body class="bg-white sm:bg-darkgrey P font-roboto">
     <!-- Sign-up form start -->
   <div class="flex justify-center items-center h-screen">
-    <div class=" bg-whitee sm:rounded-3xl flex flex-col sm:flex-row gap-4 p-0 sm:p-4 h-screen sm:h-auto w-full sm:w-auto">
+    <div id="newsLetter"  class="bg-whitee sm:rounded-3xl flex flex-col sm:flex-row gap-4 p-0 sm:p-4 h-screen sm:h-auto w-full sm:w-auto">
       <div class="w-full sm:w-2/4 md:w-auto p-11 pt-6 sm:pt-16 order-last sm:order-first" >
         <h1 class="text-4xl font-bold sm:text-5xl sm:font-bold mt:0 sm:mt-6">Stay updated!</h1>
         <p class="py-5 sm:py-6">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -28,9 +28,12 @@
             <img src="dist/icon-list.svg" alt="icon for list"/>
             <p>And much more!</p>
         </div>
-        <p class="pt-12">Email address</p>
-        <input class="rounded-lg w-full p-3 border border-solid border-myGrey" type="email"  placeholder="email@company.com"/>
-        <button type="button" class="rounded-lg w-full p-3 bg-darkgrey text-whitee mt-7" id="btn">Subscribe to monthly newsletter</button>
+        <div class="flex justify-between">
+          <p class="mt-12">Email address</p>
+          <span id="errorMessage" class="mt-12"></span>
+        </div>
+        <input class=" mail rounded-lg w-full p-3 border border-solid border-myGrey" type="email"  placeholder="email@company.com"/>
+        <button id="btn" type="button" class="rounded-lg w-full p-3 bg-darkgrey text-whitee mt-7 hover:bg-Tomato  hover:shadow-md" >Subscribe to monthly newsletter</button>
       </div>
       <div class="w-full sm:w-2/4">
         <img class="hidden w-full h:auto sm:h-full sm:block" src="dist/illustration-sign-up-desktop.svg " alt="illustration-sign-up-desktop"/>
@@ -39,12 +42,12 @@
     </div>
     <!-- Sign-up form end -->
     <!-- Success message start -->
-    <div class="w-full hide message bg-white p-6 h-screen sm:bg-white sm:w-1/5 sm:p-10 sm:rounded-3xl sm:h-80" >
+    <div id="successMessage" class="active w-full bg-white p-6 h-screen sm:bg-white sm:w-1/5 sm:p-10 sm:rounded-3xl sm:h-80" >
       <img src="dist/icon-list.svg" alt="icon for list" class="w-16 sm:w-10 pt-20 sm:pt-0"/>
       <h1 class="text-5xl font-bold pt-10 sm:pt-4">Thanks for subscribing!</h1>
-      <p class="pt-6 pb-96 sm:pt-6 sm:pb-6"> A confirmation email has been sent to <span class="font-bold">ash@loremcompany.com.</span>
+      <p class="pt-6 pb-96 sm:pt-6 sm:pb-6"> A confirmation email has been sent to <span id="userMail" class="font-bold">ash@loremcompany.com.</span>
         Please open it and click the button inside to confirm your subscription.</p>
-      <button class="bg-darkgrey text-white w-full py-3 px-6 rounded-lg">Dismiss message</button>
+      <button id="dismissBtn" class="bg-darkgrey text-white w-full py-3 px-6 rounded-lg hover:bg-Tomato hover:shadow-md">Dismiss message</button>
     </div>
   </div>
 
